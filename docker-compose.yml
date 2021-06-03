@@ -10,4 +10,4 @@ services:
         volumes:
             - webapps:/usr/local/tomcat/webapps
 volumes:
-    data-volume:
+    webapps:
