@@ -6,7 +6,7 @@ services:
         volumes:
             - webapps:/tmp/webapps
     tomcat:
-        image: tomcat:9.0.46-slim
+        image: tomcat:9.0.46-jdk16-openjdk-slim-buster
         volumes:
             - webapps:/usr/local/tomcat/webapps
 volumes:
