@@ -10,5 +10,7 @@ services:
         image: tomcat:9.0.46-jdk16-openjdk-slim-buster
         volumes:
             - webapps:/usr/local/tomcat/webapps
+        ports:
+            - "8080:8080"
 volumes:
     webapps:
