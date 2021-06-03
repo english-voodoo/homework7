@@ -1,5 +1,5 @@
-version: "3"
 ---
+version: "3"
 services:
     maven:
         build: maven_host
@@ -11,3 +11,4 @@ services:
             - webapps:/usr/local/tomcat/webapps
 volumes:
     data-volume:
+---
