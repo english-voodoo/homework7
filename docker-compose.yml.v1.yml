@@ -7,8 +7,7 @@ services:
         volumes:
             - webapps:/tmp/webapps
     tomcat:
-        build: tomcat_host
-        image: tomcat_boxfuse:latest
+        image: tomcat:9.0.46-jdk16-openjdk-slim-buster
         volumes:
             - webapps:/usr/local/tomcat/webapps
         ports:

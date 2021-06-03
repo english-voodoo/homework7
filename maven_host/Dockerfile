@@ -1,5 +1,5 @@
 FROM maven:3.8.1-openjdk-11-slim
-RUN apt-get update && apt-get install git -y
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 WORKDIR /tmp
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /tmp/boxfuse-sample-java-war-hello
