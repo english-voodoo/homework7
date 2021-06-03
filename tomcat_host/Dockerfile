@@ -1,1 +1,0 @@
-FROM tomcat:9.0.46-jdk16-openjdk-slim-buster
