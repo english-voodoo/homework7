@@ -1,4 +1,4 @@
-FROM maven:3.8.1-slim
+FROM maven:3.8.1-openjdk-11-slim
 ENV TZ=Europe/Moscow
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get install git -y
